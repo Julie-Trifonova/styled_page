@@ -1,6 +1,7 @@
 .box {
     padding: 46px 150px;
     background: rgba(160, 144, 144, 0.78);
+    width: 80%;
 }
 .header {
 
@@ -98,11 +99,11 @@
     color: #E4E5EA;
 }
 .right_block {
-    width: 291px;
+    display: block;
+    width: 300px;
+    text-align: end;
 }
-/*.right_block_title_text:nth-child(n+2) {*/
-/*    margin-left: ;*/
-/*}*/
+
 .right_block_title_white_text {
     font-family: Inter, sans-serif;
     font-size: 18px;
@@ -130,16 +131,18 @@
 .right_block_gifts_list {
     margin-top: 40px;
     display: grid;
+    gap: 10px;
+    /*30px между блоками gift*/
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(68px, auto);
     justify-content: end;
+    justify-items: end;
 }
 .right_block_gift {
-    display: grid;
-    justify-items: end;
-    justify-content: end;
+    width: 135px;
 }
 .right_block_gift_title {
+    text-align: end;
     font-family: Inter, sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -148,12 +151,26 @@
     color: #E4E5EA;
 }
 .right_block_gift_text {
-    display: grid;
-    justify-items: end;
-    justify-content: end;
+    text-align: end;
     font-family: Montserrat, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
     color: #E4E5EA;
+}
+.right_block_button_consultation_container {
+    margin-top: 60px;
+}
+.right_block_button_consultation_button {
+    width: 262px;
+    height: 61px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #E4E5EA;
+    background: #4077F3;
+    border: none;
+    cursor: pointer;
+    transition: 300ms;
 }

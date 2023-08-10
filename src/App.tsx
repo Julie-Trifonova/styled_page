@@ -107,10 +107,14 @@ function App() {
 
                     <div className={s.right_block}>
                         <div className={s.right_block_title}>
-                            <span className={`${s.right_block_title_text} ${s.right_block_title_white_text} ${s.right_block_title_part_1}`}>Вместе с</span>
-                            <span className={`${s.right_block_title_text} ${s.right_block_title_gradient_text} ${s.right_block_title_part_2}`}> бесплатной</span>
-                            <span className={`${s.right_block_title_text} ${s.right_block_title_gradient_text} ${s.right_block_title_part_3}`}> консультацией</span>
-                            <span className={`${s.right_block_title_text} ${s.right_block_title_white_text} ${s.right_block_title_part_4}`}> мы дарим:</span>
+                            <span
+                                className={`${s.right_block_title_text} ${s.right_block_title_white_text} ${s.right_block_title_part_1}`}>Вместе с</span>
+                            <span
+                                className={`${s.right_block_title_text} ${s.right_block_title_gradient_text} ${s.right_block_title_part_2}`}> бесплатной</span>
+                            <span
+                                className={`${s.right_block_title_text} ${s.right_block_title_gradient_text} ${s.right_block_title_part_3}`}> консультацией</span>
+                            <span
+                                className={`${s.right_block_title_text} ${s.right_block_title_white_text} ${s.right_block_title_part_4}`}> мы дарим:</span>
                         </div>
                         <div className={s.right_block_gifts_list}>
                             <div className={s.right_block_gift}>
@@ -145,7 +149,11 @@ function App() {
                                     использования CRM
                                 </div>
                             </div>
-                            <button className={s.right_block_button_consultation}>Получить консультацию</button>
+                        </div>
+                        <div className={s.right_block_button_consultation_container}>
+                            <button className={s.right_block_button_consultation_button}>
+                                Получить консультацию
+                            </button>
                         </div>
                     </div>
                 </div>
