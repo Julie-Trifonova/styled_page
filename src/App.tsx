@@ -32,7 +32,6 @@ function App() {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                {/*<img className={s.welbex_logo_img} src={welbexLogo} alt={''}/>*/}
                             </div>
                             <div className={s.menu_services_items_list}>
                                 <div className={s.menu_services_item}>Услуги</div>
@@ -91,14 +90,16 @@ function App() {
                 <div className={s.content}>
 
                     <div className={s.left_block}>
-                        <div className={s.left_block_title_make_money}>
-                            Зарабатывайте больше
-                        </div>
-                        <div className={s.left_block_title_welbex}>
+                        <div className={s.left_block_title}>
+                            <div className={s.left_block_title_text_part_1}>
+                                Зарабатывайте больше
+                            </div>
+                            <div className={s.left_block_title_text_part_2}>
                             <span
                                 className={`${s.left_block_tile_welbex_text} ${s.left_block_tile_welbex_text_part_1}`}>с</span>
-                            <span
-                                className={`${s.left_block_tile_welbex_text} ${s.left_block_tile_welbex_text_part_2}`}>Welbex</span>
+                                <span
+                                    className={`${s.left_block_tile_welbex_text} ${s.left_block_tile_welbex_text_part_2}`}> Welbex</span>
+                            </div>
                         </div>
                         <div className={s.left_block_subtitle}>
                             Развиваем и контролируем продажи за вас
@@ -164,11 +165,14 @@ function App() {
                             <div className={`${s.footer_section_title} ${s.footer_section_about_company_title}`}>
                                 О компании
                             </div>
-                            <div className={`${s.footer_section_text_container} ${s.footer_section_about_company_text}`}>
-                                <div className={`${s.footer_section_text} ${s.footer_section_about_company_text_part_1}`}>
+                            <div
+                                className={`${s.footer_section_text_container} ${s.footer_section_about_company_text}`}>
+                                <div
+                                    className={`${s.footer_section_text} ${s.footer_section_about_company_text_part_1}`}>
                                     Партнерская программа
                                 </div>
-                                <div className={`${s.footer_section_text} ${s.footer_section_about_company_text_part_2}`}>
+                                <div
+                                    className={`${s.footer_section_text} ${s.footer_section_about_company_text_part_2}`}>
                                     Вакансии
                                 </div>
                             </div>
@@ -180,41 +184,51 @@ function App() {
                             </div>
                             <div className={`${s.footer_section_text_container} ${s.footer_section_menu_text}`}>
                                 <div className={s.footer_section_text_blocks}>
-                                <div className={s.footer_section_menu_text_block_1}>
-                                    <div className={`${s.footer_section_text} ${s.footer_section_menu_text_block_1_text}`}>
-                                        Расчет стоимости
+                                    <div className={s.footer_section_menu_text_block_1}>
+                                        <div
+                                            className={`${s.footer_section_text} ${s.footer_section_menu_text_block_1_text}`}>
+                                            Расчет стоимости
+                                        </div>
+                                        <div
+                                            className={`${s.footer_section_text} ${s.footer_section_menu_text_block_1_text}`}>
+                                            Услуги
+                                        </div>
+                                        <div
+                                            className={`${s.footer_section_text} ${s.footer_section_menu_text_block_1_text}`}>
+                                            Виджеты
+                                        </div>
+                                        <div
+                                            className={`${s.footer_section_text} ${s.footer_section_menu_text_block_1_text}`}>
+                                            Интеграции
+                                        </div>
+                                        <div
+                                            className={`${s.footer_section_text} ${s.footer_section_menu_text_block_1_text}`}>
+                                            Наши клиенты
+                                        </div>
                                     </div>
-                                    <div className={`${s.footer_section_text} ${s.footer_section_menu_text_block_1_text}`}>
-                                        Услуги
-                                    </div>
-                                    <div className={`${s.footer_section_text} ${s.footer_section_menu_text_block_1_text}`}>
-                                        Виджеты
-                                    </div>
-                                    <div className={`${s.footer_section_text} ${s.footer_section_menu_text_block_1_text}`}>
-                                        Интеграции
-                                    </div>
-                                    <div className={`${s.footer_section_text} ${s.footer_section_menu_text_block_1_text}`}>
-                                        Наши клиенты
-                                    </div>
-                                </div>
 
-                                <div className={s.footer_section_menu_text_block_2}>
-                                    <div className={`${s.footer_section_text} ${s.footer_section_menu_text_block_2_text}`}>
-                                        Кейсы
+                                    <div className={s.footer_section_menu_text_block_2}>
+                                        <div
+                                            className={`${s.footer_section_text} ${s.footer_section_menu_text_block_2_text}`}>
+                                            Кейсы
+                                        </div>
+                                        <div
+                                            className={`${s.footer_section_text} ${s.footer_section_menu_text_block_2_text}`}>
+                                            Благодарственные письма
+                                        </div>
+                                        <div
+                                            className={`${s.footer_section_text} ${s.footer_section_menu_text_block_2_text}`}>
+                                            Сертификаты
+                                        </div>
+                                        <div
+                                            className={`${s.footer_section_text} ${s.footer_section_menu_text_block_2_text}`}>
+                                            Блог на Youtube
+                                        </div>
+                                        <div
+                                            className={`${s.footer_section_text} ${s.footer_section_menu_text_block_2_text}`}>
+                                            Вопрос / Ответ
+                                        </div>
                                     </div>
-                                    <div className={`${s.footer_section_text} ${s.footer_section_menu_text_block_2_text}`}>
-                                        Благодарственные письма
-                                    </div>
-                                    <div className={`${s.footer_section_text} ${s.footer_section_menu_text_block_2_text}`}>
-                                        Сертификаты
-                                    </div>
-                                    <div className={`${s.footer_section_text} ${s.footer_section_menu_text_block_2_text}`}>
-                                        Блог на Youtube
-                                    </div>
-                                    <div className={`${s.footer_section_text} ${s.footer_section_menu_text_block_2_text}`}>
-                                        Вопрос / Ответ
-                                    </div>
-                                </div>
                                 </div>
 
                             </div>
@@ -225,11 +239,12 @@ function App() {
                                 Контакты
                             </div>
                             <div className={`${s.footer_section_text_container} ${s.footer_section_contacts_text}`}>
-                                <div className={`${s.footer_section_text} ${s.footer_section_contacts_tel}`}>
+                                <div className={`${s.footer_section_text_contacts} ${s.footer_section_contacts_tel}`}>
                                     +7 555 555-55-55
                                 </div>
-                                <div className={`${s.footer_section_text} ${s.footer_section_contacts_icons}`}>
-                                    <div className={`${s.footer_section_contacts_icon} ${s.footer_section_contacts_icon_telegram}`}>
+                                <div className={`${s.footer_section_text_contacts} ${s.footer_section_contacts_icons}`}>
+                                    <div
+                                        className={`${s.footer_section_contacts_icon} ${s.footer_section_contacts_icon_telegram}`}>
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -237,7 +252,8 @@ function App() {
                                                 fill="#E4E5EA"/>
                                         </svg>
                                     </div>
-                                    <div className={`${s.footer_section_contacts_icon} ${s.footer_section_contacts_icon_viber}`}>
+                                    <div
+                                        className={`${s.footer_section_contacts_icon} ${s.footer_section_contacts_icon_viber}`}>
                                         <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -254,7 +270,8 @@ function App() {
                                                 fill="#E4E5EA"/>
                                         </svg>
                                     </div>
-                                    <div className={`${s.footer_section_contacts_icon} ${s.footer_section_contacts_icon_whatsapp}`}>
+                                    <div
+                                        className={`${s.footer_section_contacts_icon} ${s.footer_section_contacts_icon_whatsapp}`}>
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -263,17 +280,18 @@ function App() {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`${s.footer_section_text} ${s.footer_section_contacts_address}`}>
+                                <div
+                                    className={`${s.footer_section_text_contacts} ${s.footer_section_contacts_address}`}>
                                     Москва, Путевой проезд 3с1, к 902
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className={s.footer_privacy_policy}>
-                        <div className={s.footer_privacy_policy_text_part_1}>
+                        <div className={`${s.footer_privacy_policy_text} ${s.footer_privacy_policy_text_part_1}`}>
                             WELBEX 2022. Все права защищены.
                         </div>
-                        <div className={s.footer_privacy_policy_text_part_2}>
+                        <div className={`${s.footer_privacy_policy_text} ${s.footer_privacy_policy_text_part_2}`}>
                             Политика конфиденциальности.
                         </div>
                     </div>

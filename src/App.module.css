@@ -1,4 +1,4 @@
-/*cursors*/
+
 /*fonfamily*/
 /** { content-box, ...}*/
 .box {
@@ -7,7 +7,7 @@
     width: 80%;
 }
 .header {
-
+    height: 73px;
 }
 .header_main_content {
     display: flex;
@@ -17,10 +17,15 @@
 .welbex_logo_and_menu {
     display: flex;
 }
+.welbex_logo {
+    cursor: pointer;
+}
 .menu_services_items_list {
     display: flex;
+    margin-left: 50px;
 }
 .menu_services_item {
+    cursor: pointer;
     font-family: Inter, sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -68,8 +73,10 @@
 .left_block {
     width: 362px;
 }
-
-.left_block_title_make_money {
+.left_block_title {
+    cursor: pointer;
+}
+.left_block_title_text_part_1 {
     font-family: Inter, sans-serif;
     font-size: 48px;
     font-weight: 400;
@@ -94,6 +101,7 @@
     -webkit-text-fill-color: transparent;
 }
 .left_block_subtitle {
+    width: 275px;
     margin-top: 30px;
     font-family: Montserrat, sans-serif;
     font-size: 18px;
@@ -143,6 +151,7 @@
 }
 .right_block_gift {
     width: 135px;
+    cursor: pointer;
 }
 .right_block_gift_title {
     text-align: end;
@@ -185,13 +194,14 @@
 }
 .footer_sections {
     display: grid;
-    grid-template-columns: 0.2fr 0.35fr 0.25fr;
+    grid-template-columns: 0.26fr 0.44fr 0.30fr;
     /*grid-template-rows: 1fr 1fr;*/
 }
 .footer_section {
 
 }
 .footer_section_title {
+    cursor: pointer;
     text-transform: uppercase;
     font-family: Inter, sans-serif;
     font-size: 14px;
@@ -209,6 +219,22 @@
     margin-left: 50px;
 }
 .footer_section_text {
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #E4E5EA;
+}
+.footer_section_contacts_tel {
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #E4E5EA;
+}
+.footer_section_contacts_address {
     font-family: Inter, sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -218,11 +244,34 @@
 .footer_section_text:nth-child(n+2) {
     margin-top: 10px;
 }
+.footer_section_text_contacts:nth-child(n+2) {
+    margin-top: 20px;
+}
+.footer_section_contacts_title {
+    text-align: end;
+}
 .footer_section_contacts_text {
     text-align: end;
 }
-
 .footer_section_contacts_icons {
     display: flex;
     justify-content: end;
+}
+.footer_section_contacts_icon {
+    cursor: pointer;
+}
+.footer_section_contacts_icon:nth-child(n+2) {
+    margin-left: 10px;
+}
+.footer_privacy_policy_text {
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #E4E5EA;
+    text-align: end;
+}
+.footer_privacy_policy_text_part_2 {
+    cursor: pointer;
+    text-decoration: underline;
 }
