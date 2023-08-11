@@ -14,6 +14,10 @@
     font-family: "Inter";
     src: url(./styles/fonts/Inter/Inter-Regular.ttf) format("ttf");
 }
+@font-face {
+    font-family: "Inter-Thin";
+    src: url(./styles/fonts/Inter/Inter-Thin.ttf) format("ttf");
+}
 
 .app {
     display: block;
@@ -549,40 +553,44 @@
         -webkit-text-fill-color: transparent;
     }
     .mobile_right_block_gifts_list {
-        margin-top: 40px;
+        margin-top: 20px;
         display: grid;
-        gap: 30px;
-        grid-template-columns: 1fr 1fr;
-        grid-auto-rows: minmax(68px, auto);
-        justify-content: end;
-        justify-items: end;
+        gap: 14px;
+        grid-template-columns: 115px 141px;
+        grid-auto-rows: minmax(16px, auto);
     }
     .mobile_right_block_gift {
+        display: flex;
+        align-items: center;
         width: 135px;
         cursor: pointer;
     }
     .mobile_right_block_gift_dash {
-        background: linear-gradient(to right, #fcb045 75%, #ff3f78 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        box-sizing: border-box;
+        width: 10px;
+        border-top: 1px solid transparent;
+        -webkit-border-image: -webkit-linear-gradient(left, #fcb045 36.99%, #fd1d1d 100%);
+        border-image-slice: 1;
+        /*(to right, #fcb045 75%, #ff3f78 100%);*/
     }
-    .mobile_right_block_gift_text {
-        text-transform: uppercase;
-        font-family: Montserrat, Arial, sans-serif;
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 16px;
-        color: #E4E5EA;
-        transition-property: all;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 140ms;
-    }
-    .mobile_right_block_gift_text:hover {
-        color: #7b83bb;
-    }
-    .footer_sections {
-        display: flex;
-        flex-direction: column;
-    }
+.mobile_right_block_gift_text {
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #E4E5EA;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 140ms;
+}
+.mobile_right_block_gift_text:hover {
+    color: #7b83bb;
+}
+.footer_sections {
+    display: flex;
+    flex-direction: column;
+}
 
 }

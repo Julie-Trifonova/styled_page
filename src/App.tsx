@@ -185,33 +185,25 @@ function App() {
                         </div>
                         <div className={s.mobile_right_block_gifts_list}>
                             <div className={s.mobile_right_block_gift}>
-                                <span className={s.mobile_right_block_gift_dash}>
-                                    -
-                                </span>
+                                <span className={s.mobile_right_block_gift_dash}></span>
                                 <span className={s.mobile_right_block_gift_text}>
                                     Skype аудит
                                 </span>
                             </div>
                             <div className={s.mobile_right_block_gift}>
-                                <span className={s.mobile_right_block_gift_dash}>
-                                    -
-                                </span>
+                                <span className={s.mobile_right_block_gift_dash}></span>
                                 <span className={s.mobile_right_block_gift_text}>
                                     30 виджетов
                                 </span>
                             </div>
                             <div className={s.mobile_right_block_gift}>
-                                <span className={s.mobile_right_block_gift_dash}>
-                                    -
-                                </span>
+                                <span className={s.mobile_right_block_gift_dash}></span>
                                 <span className={s.mobile_right_block_gift_text}>
                                     DashBoard
                                 </span>
                             </div>
                             <div className={s.mobile_right_block_gift}>
-                                <span className={s.mobile_right_block_gift_dash}>
-                                    -
-                                </span>
+                                <span className={s.mobile_right_block_gift_dash}></span>
                                 <span className={s.mobile_right_block_gift_text}>
                                     Месяц AmoCRM
                                 </span>
