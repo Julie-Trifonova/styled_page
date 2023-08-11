@@ -14,7 +14,7 @@ function App() {
                 <div className={s.background_red_light}></div>
             </div>
             <div className={s.box}>
-                <div className={s.header}>
+                <div className={s.header_desktop}>
                     <div className={s.header_main_content}>
                         <div className={s.welbex_logo_and_menu}>
                             <div className={s.welbex_logo}>
@@ -93,6 +93,14 @@ function App() {
                         крупный интегратор CRM в России и еще 8 странах
                     </div>
                 </div>
+                <div className={s.mobile_header}>
+                    <div className={s.mobile_header_menu_services_items_list}>
+                        <div className={s.mobile_header_menu_services_item}>Услуги</div>
+                        <div className={s.mobile_header_menu_services_item}>Виджеты</div>
+                        <div className={s.mobile_header_menu_services_item}>Интеграции</div>
+                        <div className={s.mobile_header_menu_services_item}>Кейсы</div>
+                    </div>
+                </div>
 
                 <div className={s.content}>
 
@@ -162,6 +170,52 @@ function App() {
                             <button className={s.right_block_button_consultation_button}>
                                 Получить консультацию
                             </button>
+                        </div>
+                    </div>
+                    <div className={s.mobile_right_block}>
+                        <div className={s.mobile_right_block_title}>
+                                <span
+                                    className={`${s.mobile_right_block_title_text} ${s.mobile_right_block_title_white_text} ${s.mobile_right_block_title_part_1}`}>Вместе с</span>
+                            <span
+                                className={`${s.mobile_right_block_title_text} ${s.mobile_right_block_title_gradient_text} ${s.mobile_right_block_title_part_2}`}> бесплатной</span>
+                            <span
+                                className={`${s.mobile_right_block_title_text} ${s.mobile_right_block_title_gradient_text} ${s.mobile_right_block_title_part_3}`}> консультацией</span>
+                            <span
+                                className={`${s.mobile_right_block_title_text} ${s.mobile_right_block_title_white_text} ${s.mobile_right_block_title_part_4}`}> мы дарим:</span>
+                        </div>
+                        <div className={s.mobile_right_block_gifts_list}>
+                            <div className={s.mobile_right_block_gift}>
+                                <span className={s.mobile_right_block_gift_dash}>
+                                    -
+                                </span>
+                                <span className={s.mobile_right_block_gift_text}>
+                                    Skype аудит
+                                </span>
+                            </div>
+                            <div className={s.mobile_right_block_gift}>
+                                <span className={s.mobile_right_block_gift_dash}>
+                                    -
+                                </span>
+                                <span className={s.mobile_right_block_gift_text}>
+                                    30 виджетов
+                                </span>
+                            </div>
+                            <div className={s.mobile_right_block_gift}>
+                                <span className={s.mobile_right_block_gift_dash}>
+                                    -
+                                </span>
+                                <span className={s.mobile_right_block_gift_text}>
+                                    DashBoard
+                                </span>
+                            </div>
+                            <div className={s.mobile_right_block_gift}>
+                                <span className={s.mobile_right_block_gift_dash}>
+                                    -
+                                </span>
+                                <span className={s.mobile_right_block_gift_text}>
+                                    Месяц AmoCRM
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
