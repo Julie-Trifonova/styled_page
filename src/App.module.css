@@ -176,12 +176,6 @@
     line-height: 12px;
     color: #E4E5EA;
 }
-
-.content {
-    margin-top: 90px;
-    display: flex;
-    justify-content: space-between;
-}
 .left_block_title {
     cursor: pointer;
 }
@@ -207,111 +201,13 @@
     -webkit-text-fill-color: transparent;
 }
 .left_block_subtitle {
-    width: 275px;
-    margin-top: 30px;
     font-family: Montserrat, Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
     color: #E4E5EA;
 }
-.right_block {
-    display: block;
-    width: 300px;
-    text-align: end;
-}
 
-.right_block_title_white_text {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 22px;
-    color: #E4E5EA;
-}
-.right_block_title_gradient_text {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 22px;
-    text-transform: uppercase;
-}
-.right_block_title_part_2 {
-    background: linear-gradient(to right, #fcb045 2%, #ff3f78 60%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.right_block_title_part_3 {
-    background: linear-gradient(to right, #fcb045 75%, #ff3f78 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.right_block_gifts_list {
-    margin-top: 40px;
-    display: grid;
-    gap: 30px;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: minmax(68px, auto);
-    justify-content: end;
-    justify-items: end;
-}
-.right_block_gift {
-    width: 135px;
-    cursor: pointer;
-}
-.right_block_gift_title {
-    text-align: end;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 22px;
-    text-transform: uppercase;
-    color: #E4E5EA;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 140ms;
-}
-.right_block_gift_title:hover {
-    color: #7b83bb;
-}
-.right_block_gift_text {
-    text-align: end;
-    font-family: Montserrat, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    color: #E4E5EA;
-}
-.right_block_button_consultation_container {
-    margin-top: 60px;
-}
-.right_block_button_consultation_button {
-    width: 262px;
-    height: 61px;
-    appearance: none;
-    font-family: inherit;
-    outline: 0;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    color: #E4E5EA;
-    background: #4077F3;
-    border: none;
-    cursor: pointer;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 140ms;
-}
-.right_block_button_consultation_button:hover {
-    background: #5e87de;
-}
-
-.footer {
-    display: block;
-    height: 315px;
-    margin-top: 70px;
-    padding: 55px 0;
-}
-.footer_sections {
-    display: grid;
-    grid-template-columns: 0.26fr 0.44fr 0.30fr;
-}
 .footer_section_title {
     text-transform: uppercase;
     font-size: 14px;
@@ -426,9 +322,112 @@
     .mobile_header {
         display: none;
     }
-
+    .content {
+        margin-top: 90px;
+        display: flex;
+        justify-content: space-between;
+    }
     .left_block {
         width: 362px;
+    }
+    .left_block_subtitle {
+        width: 275px;
+        margin-top: 30px;
+    }
+    .right_block {
+        display: block;
+        width: 300px;
+        text-align: end;
+    }
+    .right_block_title_white_text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        color: #E4E5EA;
+    }
+    .right_block_title_gradient_text {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        text-transform: uppercase;
+    }
+    .right_block_title_part_2 {
+        background: linear-gradient(to right, #fcb045 2%, #ff3f78 60%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .right_block_title_part_3 {
+        background: linear-gradient(to right, #fcb045 75%, #ff3f78 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .right_block_gifts_list {
+        margin-top: 40px;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(68px, auto);
+        justify-content: end;
+        justify-items: end;
+    }
+    .right_block_gift {
+        width: 135px;
+        cursor: pointer;
+    }
+    .right_block_gift_title {
+        text-align: end;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #E4E5EA;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 140ms;
+    }
+    .right_block_gift_title:hover {
+        color: #7b83bb;
+    }
+    .right_block_gift_text {
+        text-align: end;
+        font-family: Montserrat, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #E4E5EA;
+    }
+    .right_block_button_consultation_container {
+        margin-top: 60px;
+    }
+    .right_block_button_consultation_button {
+        width: 262px;
+        height: 61px;
+        appearance: none;
+        font-family: inherit;
+        outline: 0;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #E4E5EA;
+        background: #4077F3;
+        border: none;
+        cursor: pointer;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 140ms;
+    }
+    .right_block_button_consultation_button:hover {
+        background: #5e87de;
+    }
+    .footer {
+        display: block;
+        height: 315px;
+        margin-top: 70px;
+        padding: 55px 0;
+    }
+    .footer_sections {
+        display: grid;
+        grid-template-columns: 0.26fr 0.44fr 0.30fr;
     }
 
 }
@@ -494,8 +493,7 @@
     .content {
         display: flex;
         flex-direction: column;
-        padding: 0 15px;
-        margin-top: 40px;
+        padding: 40px 15px 60px 15px;
     }
 
 
@@ -588,9 +586,19 @@
 .mobile_right_block_gift_text:hover {
     color: #7b83bb;
 }
+.footer {
+    background: black;
+}
 .footer_sections {
     display: flex;
+    height: 315px;
+    margin-top: 70px;
+    padding: 55px 0;
     flex-direction: column;
 }
+    .footer_sections {
+        display: flex;
+        flex-direction: column;
+    }
 
 }
