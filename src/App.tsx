@@ -5,7 +5,14 @@ const welbexLogo = require('./styles/images/logo_welbex.jpg');
 
 function App() {
     return (
-        <div className={s.App}>
+        <div className={s.app}>
+            <div className={s.background}>
+                <div className={s.background_purple_ball}></div>
+                <div className={s.background_red_big_ball}></div>
+                <div className={s.background_red_small_ball}></div>
+                <div className={s.background_purple_light}></div>
+                <div className={s.background_red_light}></div>
+            </div>
             <div className={s.box}>
                 <div className={s.header}>
                     <div className={s.header_main_content}>
