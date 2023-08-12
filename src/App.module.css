@@ -111,20 +111,8 @@
     display: block;
     box-sizing: border-box;
 }
-.header_main_content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.welbex_logo_and_menu {
-    display: flex;
-}
 .welbex_logo {
     cursor: pointer;
-}
-.menu_services_items_list {
-    display: flex;
-    margin-left: 50px;
 }
 .menu_services_item {
     cursor: pointer;
@@ -137,12 +125,6 @@
 }
 .menu_services_item:hover {
     color: #7b83bb;
-}
-.menu_services_item:nth-child(n + 2) {
-    margin-left: 30px;
-}
-.contacts {
-    display: flex;
 }
 .contacts_tel_number {
     font-size: 16px;
@@ -160,13 +142,6 @@
     width: 20px;
     height: 20px;
     cursor: pointer;
-}
-.contacts_media_icon:nth-child(n + 2) {
-    margin-left: 30px;
-}
-.contacts_media_icons {
-    display: flex;
-    margin-left: 47px;
 }
 .header_welbex_logo_description{
     width: 165px;
@@ -215,15 +190,6 @@
     line-height: 17px;
     color: #656566;
 }
-.footer_section_text_container {
-    margin-top: 20px;
-}
-.footer_section_text_blocks {
-    display: flex;
-}
-.footer_section_menu_text_block_2 {
-    margin-left: 50px;
-}
 .footer_section_text {
     cursor: pointer;
     font-size: 16px;
@@ -256,26 +222,9 @@
     line-height: 20px;
     color: #E4E5EA;
 }
-.footer_section_text:nth-child(n+2) {
-    margin-top: 10px;
-}
-.footer_section_text_contacts:nth-child(n+2) {
-    margin-top: 20px;
-}
-.footer_section_contacts_title {
-    text-align: end;
-}
-.footer_section_contacts_text {
-    text-align: end;
-}
-.footer_section_contacts_icons {
-    display: flex;
-    justify-content: end;
-}
 .footer_section_contacts_icon {
     cursor: pointer;
 }
-
 .footer_section_contacts_icon:nth-child(n+2) {
     margin-left: 10px;
 }
@@ -285,7 +234,6 @@
     font-weight: 400;
     line-height: 15px;
     color: #E4E5EA;
-    text-align: end;
 }
 .footer_privacy_policy_text_part_2 {
     cursor: pointer;
@@ -318,6 +266,31 @@
     }
     .header_desktop {
         height: 73px;
+    }
+    .header_main_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .welbex_logo_and_menu {
+        display: flex;
+    }
+    .menu_services_items_list {
+        display: flex;
+        margin-left: 50px;
+    }
+    .menu_services_item:nth-child(n + 2) {
+        margin-left: 30px;
+    }
+    .contacts {
+        display: flex;
+    }
+    .contacts_media_icon:nth-child(n + 2) {
+        margin-left: 30px;
+    }
+    .contacts_media_icons {
+        display: flex;
+        margin-left: 47px;
     }
     .mobile_header {
         display: none;
@@ -429,7 +402,34 @@
         display: grid;
         grid-template-columns: 0.26fr 0.44fr 0.30fr;
     }
-
+    .footer_section_text_container {
+        margin-top: 20px;
+    }
+    .footer_section_text_blocks {
+        display: flex;
+    }
+    .footer_section_menu_text_block_2 {
+        margin-left: 50px;
+    }
+    .footer_section_text:nth-child(n+2) {
+        margin-top: 10px;
+    }
+    .footer_section_text_contacts:nth-child(n+2) {
+        margin-top: 20px;
+    }
+    .footer_section_contacts_title {
+        text-align: end;
+    }
+    .footer_section_contacts_text {
+        text-align: end;
+    }
+    .footer_section_contacts_icons {
+        display: flex;
+        justify-content: end;
+    }
+    .footer_privacy_policy_text {
+        text-align: end;
+    }
 }
 
 @media (max-width: 320px) {
@@ -601,4 +601,96 @@
         flex-direction: column;
     }
 
+
+
+
+    /*.footer_section_title {*/
+    /*    text-transform: uppercase;*/
+    /*    font-size: 14px;*/
+    /*    font-weight: 700;*/
+    /*    line-height: 17px;*/
+    /*    color: #656566;*/
+    /*}*/
+    /*.footer_section_text_container {*/
+    /*    margin-top: 20px;*/
+    /*}*/
+    /*.footer_section_text_blocks {*/
+    /*    display: flex;*/
+    /*}*/
+    /*.footer_section_menu_text_block_2 {*/
+    /*    margin-left: 50px;*/
+    /*}*/
+    /*.footer_section_text {*/
+    /*    cursor: pointer;*/
+    /*    font-size: 16px;*/
+    /*    font-weight: 400;*/
+    /*    line-height: 20px;*/
+    /*    color: #E4E5EA;*/
+    /*    transition-property: all;*/
+    /*    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
+    /*    transition-duration: 140ms;*/
+    /*}*/
+    /*.footer_section_text:hover {*/
+    /*    color: #7b83bb;*/
+    /*}*/
+    /*.footer_section_contacts_tel {*/
+    /*    cursor: pointer;*/
+    /*    font-size: 16px;*/
+    /*    font-weight: 500;*/
+    /*    line-height: 20px;*/
+    /*    color: #E4E5EA;*/
+    /*    transition-property: all;*/
+    /*    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
+    /*    transition-duration: 140ms;*/
+    /*}*/
+    /*.footer_section_contacts_tel:hover {*/
+    /*    color: #7b83bb;*/
+    /*}*/
+    /*.footer_section_contacts_address {*/
+    /*    font-size: 16px;*/
+    /*    font-weight: 400;*/
+    /*    line-height: 20px;*/
+    /*    color: #E4E5EA;*/
+    /*}*/
+    /*.footer_section_text:nth-child(n+2) {*/
+    /*    margin-top: 10px;*/
+    /*}*/
+    /*.footer_section_text_contacts:nth-child(n+2) {*/
+    /*    margin-top: 20px;*/
+    /*}*/
+    /*.footer_section_contacts_title {*/
+    /*    text-align: end;*/
+    /*}*/
+    /*.footer_section_contacts_text {*/
+    /*    text-align: end;*/
+    /*}*/
+    /*.footer_section_contacts_icons {*/
+    /*    display: flex;*/
+    /*    justify-content: end;*/
+    /*}*/
+    /*.footer_section_contacts_icon {*/
+    /*    cursor: pointer;*/
+    /*}*/
+
+    /*.footer_section_contacts_icon:nth-child(n+2) {*/
+    /*    margin-left: 10px;*/
+    /*}*/
+    /*.footer_privacy_policy_text {*/
+    /*    font-family: Montserrat, Arial, sans-serif;*/
+    /*    font-size: 12px;*/
+    /*    font-weight: 400;*/
+    /*    line-height: 15px;*/
+    /*    color: #E4E5EA;*/
+    /*    text-align: end;*/
+    /*}*/
+    /*.footer_privacy_policy_text_part_2 {*/
+    /*    cursor: pointer;*/
+    /*    text-decoration: underline;*/
+    /*    transition-property: all;*/
+    /*    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
+    /*    transition-duration: 140ms;*/
+    /*}*/
+    /*.footer_privacy_policy_text_part_2:hover {*/
+    /*    color: #7b83bb;*/
+    /*}*/
 }
