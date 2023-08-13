@@ -7,11 +7,13 @@ function App() {
     return (
         <div className={s.app}>
             <div className={s.background}>
+                <div className={s.background_purple_glass}></div>
                 <div className={s.background_purple_ball}></div>
                 <div className={s.background_red_big_ball}></div>
                 <div className={s.background_red_small_ball}></div>
                 <div className={s.background_purple_light}></div>
                 <div className={s.background_red_light}></div>
+                <div className={s.background_yellow_light}></div>
             </div>
             <div className={s.box}>
                 <div className={s.header_desktop}>
