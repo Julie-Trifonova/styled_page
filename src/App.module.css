@@ -1,6 +1,6 @@
 /*- pixel perfect;*/
-/*!* hover for mobile*/
 /*!* tablet*/
+/*!* gh-pages*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -162,10 +162,6 @@
     color: #E4E5EA;
 }
 
-.left_block_title {
-    cursor: pointer;
-}
-
 .left_block_title_text_part_1 {
     font-size: 48px;
     font-weight: 400;
@@ -208,33 +204,17 @@
 }
 
 .footer_section_text {
-    cursor: pointer;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
     color: #E4E5EA;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 140ms;
-}
-
-.footer_section_text:hover {
-    color: #7b83bb;
 }
 
 .footer_section_contacts_tel {
-    cursor: pointer;
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
     color: #E4E5EA;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 140ms;
-}
-
-.footer_section_contacts_tel:hover {
-    color: #7b83bb;
 }
 
 .footer_section_contacts_address {
@@ -242,10 +222,6 @@
     font-weight: 400;
     line-height: 20px;
     color: #E4E5EA;
-}
-
-.footer_section_contacts_icon {
-    cursor: pointer;
 }
 
 .footer_section_contacts_icon:nth-child(n+2) {
@@ -260,31 +236,7 @@
     color: #E4E5EA;
 }
 
-.footer_privacy_policy_text_part_2 {
-    cursor: pointer;
-    text-decoration: underline;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 140ms;
-}
-
-.footer_privacy_policy_text_part_2:hover {
-    color: #7b83bb;
-    margin-top: 5px;
-}
-
 @media (min-width: 320px) and (max-width: 1440px) {
-    .app {
-        padding: 46px 100px 0 100px;
-    }
-
-    .box {
-        width: 80%;
-    }
-}
-
-/*@media (min-width: 320px) and (max-width: 1920px){}*/
-@media (min-width: 1920px) {
     .app {
         padding: 46px 150px 0 150px;
     }
@@ -336,13 +288,22 @@
     }
 
     .content {
-        margin-top: 90px;
+        width: 100%;
+        padding-top: 90px;
         display: flex;
         justify-content: space-between;
     }
 
+    .mobile_content {
+        display: none;
+    }
+
     .left_block {
         width: 362px;
+    }
+
+    .left_block_title {
+        cursor: pointer;
     }
 
     .left_block_subtitle {
@@ -496,6 +457,44 @@
     .footer_privacy_policy_text {
         text-align: end;
     }
+
+
+
+
+    .footer_section_text {
+        cursor: pointer;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 140ms;
+    }
+
+    .footer_section_text:hover {
+        color: #7b83bb;
+    }
+    .footer_section_contacts_tel {
+        cursor: pointer;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 140ms;
+    }
+    .footer_section_contacts_tel:hover {
+        color: #7b83bb;
+    }
+    .footer_section_contacts_icon {
+        cursor: pointer;
+    }
+    .footer_privacy_policy_text_part_2 {
+        cursor: pointer;
+        text-decoration: underline;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 140ms;
+    }
+
+    .footer_privacy_policy_text_part_2:hover {
+        color: #7b83bb;
+        margin-top: 5px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -618,14 +617,12 @@
         font-weight: 500;
         line-height: 15px;
         color: #E4E5EA;
-        cursor: pointer;
     }
-
-    .mobile_header_menu_services_item:hover {
-        color: #7b83bb;
-    }
-
     .content {
+        display: none;
+    }
+
+    .mobile_content {
         display: flex;
         flex-direction: column;
         padding: 40px 15px 60px 15px;
@@ -703,7 +700,6 @@
         display: flex;
         align-items: center;
         width: 135px;
-        cursor: pointer;
     }
 
     .mobile_right_block_gift_dash {
@@ -722,13 +718,6 @@
         font-weight: 400;
         line-height: 16px;
         color: #E4E5EA;
-        transition-property: all;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 140ms;
-    }
-
-    .mobile_right_block_gift_text:hover {
-        color: #7b83bb;
     }
 
     .footer {
@@ -759,30 +748,16 @@
         margin-left: 48px;
     }
     .footer_section_text {
-        cursor: pointer;
         font-size: 14px;
         font-weight: 400;
         line-height: 17px;
         color: #E4E5EA;
-        transition-property: all;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 140ms;
-    }
-    .footer_section_text:hover {
-        color: #7b83bb;
     }
     .footer_section_contacts_tel {
-        cursor: pointer;
         font-size: 16px;
         font-weight: 500;
         line-height: 20px;
         color: #E4E5EA;
-        transition-property: all;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 140ms;
-    }
-    .footer_section_contacts_tel:hover {
-        color: #7b83bb;
     }
     .footer_section_contacts_address {
         font-size: 14px;
@@ -799,9 +774,6 @@
     .footer_section_contacts_icons {
         display: flex;
     }
-    .footer_section_contacts_icon {
-        cursor: pointer;
-    }
     .footer_section_contacts_icon:nth-child(n+2) {
         margin-left: 10px;
     }
@@ -814,13 +786,6 @@
     }
     .footer_privacy_policy_text_part_2 {
         margin-top: 5px;
-        cursor: pointer;
         text-decoration: underline;
-        transition-property: all;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 140ms;
-    }
-    .footer_privacy_policy_text_part_2:hover {
-        color: #7b83bb;
     }
 }

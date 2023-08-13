@@ -174,6 +174,24 @@ function App() {
                             </button>
                         </div>
                     </div>
+                </div>
+                <div  className={s.mobile_content}>
+                    <div className={s.left_block}>
+                        <div className={s.left_block_title}>
+                            <div className={s.left_block_title_text_part_1}>
+                                Зарабатывайте больше
+                            </div>
+                            <div className={s.left_block_title_text_part_2}>
+                            <span
+                                className={`${s.left_block_tile_welbex_text} ${s.left_block_tile_welbex_text_part_1}`}>с</span>
+                                <span
+                                    className={`${s.left_block_tile_welbex_text} ${s.left_block_tile_welbex_text_part_2}`}> Welbex</span>
+                            </div>
+                        </div>
+                        <div className={s.left_block_subtitle}>
+                            Развиваем и контролируем продажи за вас
+                        </div>
+                    </div>
                     <div className={s.mobile_right_block}>
                         <div className={s.mobile_right_block_title}>
                                 <span
