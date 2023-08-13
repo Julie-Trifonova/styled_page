@@ -236,7 +236,7 @@ function App() {
                                 Меню
                             </div>
                             <div className={`${s.footer_section_text_container} ${s.footer_section_menu_text}`}>
-                                <div className={s.footer_section_text_blocks}>
+                                <div className={s.footer_section_menu_text_blocks}>
                                     <div className={s.footer_section_menu_text_block_1}>
                                         <div
                                             className={`${s.footer_section_text} ${s.footer_section_menu_text_block_1_text}`}>
