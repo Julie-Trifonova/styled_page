@@ -1,5 +1,4 @@
 /*- pixel perfect;*/
-/*!* tablet*/
 /*!* gh-pages*/
 * {
     box-sizing: border-box;
@@ -241,7 +240,7 @@
     color: #E4E5EA;
 }
 
-@media (min-width: 321px) {
+@media (min-width: 1440px) {
     .app {
         padding: 46px 150px 0 150px;
     }
@@ -249,17 +248,15 @@
     .box {
         display: block;
         box-sizing: border-box;
-        width: 1140px;
+        width: 90%;
+        max-width: 1140px;
     }
 
     .header_desktop {
-        height: 73px;
-    }
-
-    .header_main_content {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: start;
+        height: 73px;
     }
 
     .welbex_logo_and_menu {
@@ -354,8 +351,6 @@
         gap: 30px;
         grid-template-columns: 1fr 1fr;
         grid-auto-rows: minmax(68px, auto);
-        justify-content: end;
-        justify-items: end;
     }
 
     .right_block_gift {
@@ -437,6 +432,16 @@
         margin-left: 48px;
     }
 
+    .footer_section_text {
+        cursor: pointer;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 140ms;
+    }
+
+    .footer_section_text:hover {
+        color: #7b83bb;
+    }
     .footer_section_text:nth-child(n+2) {
         margin-top: 10px;
     }
@@ -448,33 +453,6 @@
     .footer_section_contacts_title {
         text-align: end;
     }
-
-    .footer_section_contacts_text {
-        text-align: end;
-    }
-
-    .footer_section_contacts_icons {
-        display: flex;
-        justify-content: end;
-    }
-
-    .footer_privacy_policy_text {
-        text-align: end;
-    }
-
-
-
-
-    .footer_section_text {
-        cursor: pointer;
-        transition-property: all;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 140ms;
-    }
-
-    .footer_section_text:hover {
-        color: #7b83bb;
-    }
     .footer_section_contacts_tel {
         cursor: pointer;
         transition-property: all;
@@ -484,9 +462,23 @@
     .footer_section_contacts_tel:hover {
         color: #7b83bb;
     }
+
+    .footer_section_contacts_icons {
+        display: flex;
+        justify-content: end;
+    }
     .footer_section_contacts_icon {
         cursor: pointer;
     }
+
+    .footer_section_contacts_text {
+        text-align: end;
+    }
+
+    .footer_privacy_policy_text {
+        text-align: end;
+    }
+
     .footer_privacy_policy_text_part_2 {
         cursor: pointer;
         text-decoration: underline;
@@ -500,6 +492,227 @@
         margin-top: 5px;
     }
 }
+
+@media (min-width: 321px) and (max-width: 1439px) {
+    .app {
+        padding: 46px 50px 0 50px;
+    }
+
+    .header_desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex-wrap: wrap;
+    }
+
+    .welbex_logo_and_menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .header_welbex_logo_and_description {
+        padding: 0 50px 50px 0;
+    }
+
+    .menu_services_items_list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        padding-bottom: 50px;
+    }
+
+    .menu_services_item:nth-child(n + 2) {
+        margin-left: 30px;
+    }
+
+    .contacts {
+        display: flex;
+    }
+
+    .contacts_media_icon:nth-child(n + 2) {
+        margin-left: 30px;
+    }
+
+    .contacts_media_icons {
+        display: flex;
+        margin-left: 47px;
+    }
+
+    .mobile_header {
+        display: none;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 90px;
+        margin: 0 auto 70px auto;
+    }
+
+    .mobile_content {
+        display: none;
+    }
+
+    .left_block {
+        padding-bottom: 50px;
+    }
+
+    .left_block_title {
+        cursor: pointer;
+    }
+
+    .left_block_subtitle {
+        margin-top: 30px;
+    }
+
+    .right_block {
+        display: block;
+        width: 30%;
+    }
+
+    .right_block_title {
+        display: none;
+    }
+
+    .right_block_gifts_list {
+        margin-top: 40px;
+        display: grid;
+        gap: 12px;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(68px, auto);
+    }
+
+    .right_block_gift {
+        width: 135px;
+        cursor: pointer;
+    }
+
+    .right_block_gift_title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #E4E5EA;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 140ms;
+    }
+
+    .right_block_gift_title:hover {
+        color: #7b83bb;
+    }
+
+    .right_block_gift_text {
+        font-family: Montserrat, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #E4E5EA;
+    }
+
+    .right_block_button_consultation_container {
+        margin-top: 60px;
+    }
+
+    .right_block_button_consultation_button {
+        width: 262px;
+        height: 61px;
+        appearance: none;
+        font-family: inherit;
+        outline: 0;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #E4E5EA;
+        background: #4077F3;
+        border: none;
+        cursor: pointer;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 140ms;
+    }
+
+    .right_block_button_consultation_button:hover {
+        background: #5e87de;
+    }
+
+    .footer {
+        display: block;
+        padding: 0 0 55px 0;
+    }
+    .footer_sections {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer_section {
+        padding: 0 50px 30px 0;
+    }
+    .footer_section_menu_text_blocks {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer_section_menu_text_block {
+        padding-right: 48px;
+    }
+
+    .footer_section_text {
+        margin-top: 20px;
+        cursor: pointer;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 140ms;
+    }
+
+    .footer_section_text:hover {
+        color: #7b83bb;
+    }
+    .footer_section_text:nth-child(n+2) {
+        margin-top: 10px;
+    }
+
+    .footer_section_text_contacts {
+        margin-top: 20px;
+    }
+
+    .footer_section_contacts_tel {
+        cursor: pointer;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 140ms;
+    }
+    .footer_section_contacts_tel:hover {
+        color: #7b83bb;
+    }
+
+    .footer_section_contacts_icons {
+        display: flex;
+    }
+    .footer_section_contacts_icon {
+        cursor: pointer;
+    }
+
+    .footer_privacy_policy_text_part_2 {
+        cursor: pointer;
+        text-decoration: underline;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 140ms;
+    }
+
+    .footer_privacy_policy_text_part_2:hover {
+        color: #7b83bb;
+        margin-top: 5px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+}
+
 
 @media (max-width: 320px) {
     .background_purple_ball {
@@ -521,23 +734,23 @@
         border-radius: 50%;
     }
     .background_red_big_ball {
-         position: absolute;
-         z-index: -2;
-         width: 43px;
-         height: 43px;
-         left: 29px;
-         top: 457px;
-         background: radial-gradient(
-                 64% 64% at 27.25% 26.5%,
-                 rgba(255, 208, 208, 0.54) 0%,
-                 rgba(212, 93, 93, 0.26) 60%,
-                 rgba(167, 49, 49, 0.25) 80%,
-                 rgba(130, 25, 25, 0.25) 100%
-         );
-         box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.06);
-         border-radius: 50%;
-         filter: blur(5px);
-     }
+        position: absolute;
+        z-index: -2;
+        width: 43px;
+        height: 43px;
+        left: 29px;
+        top: 457px;
+        background: radial-gradient(
+                64% 64% at 27.25% 26.5%,
+                rgba(255, 208, 208, 0.54) 0%,
+                rgba(212, 93, 93, 0.26) 60%,
+                rgba(167, 49, 49, 0.25) 80%,
+                rgba(130, 25, 25, 0.25) 100%
+        );
+        box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.06);
+        border-radius: 50%;
+        filter: blur(5px);
+    }
     .background_red_small_ball {
         display: none;
     }
